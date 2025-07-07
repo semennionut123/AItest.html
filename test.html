@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Test Claude 4 Opus</title>
+</head>
+<body>
+    <h1>Testez Claude 4 Opus cu Puter.js</h1>
+    <p>Răspunsul AI-ului o să apară mai jos:</p>
+    <div id="raspuns"></div>
+
+    <script src="https://js.puter.com/v2/"></script>
+    <script>
+        puter.ai.chat("Explică-mi ce e programarea în 2 fraze simple", { model: "claude-opus-4" })
+            .then(response => {
+                document.getElementById("raspuns").innerText = response;
+            });
+    </script>
+</body>
+</html>
